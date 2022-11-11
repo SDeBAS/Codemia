@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <!-- header starts -->
+    <div class="header">
+        <div class="header__left">
+            <img src="./assets/logo.png" alt="" />
+            <div class="header__input">
+                <input type="text" placeholder="Search People" />
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="header__info">
+                <img src="./assets/Mask group.png" alt="" class="user__avatar" />
+                <h4>Debanjan Basu</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- main body starts -->
+    <div class="main__body">
+        <!-- sidebar starts -->
+        <div class="sidebar">
+            <div class="sidebarRow">
+                <img src="./assets/Mask group.png" alt="" class="user__avatar" />
+                <h4>Debanjan Basu</h4>
+            </div>
+
+            <div class="sidebarRow">
+                <span class="material-icons"> Home</span>
+            </div>
+
+            <div class="sidebarRow">
+                <span class="material-icons">Messages </span>
+            </div>
+
+            <div class="sidebarRow">
+                <span class="material-icons"> Profile Page </span>
+            </div>
+
+            <div class="sidebarRow">
+                <span class="material-icons"> Doubt Clearing </span>
+            </div>
+        </div>
+
+
+        <!-- feed starts -->
+        <div class="feed">
+
+
+            <!-- message sender starts -->
+            <div class="messageSender">
+                <div class="messageSender__top">
+                    <img src="./assets/Mask group.png" alt="" srcset="">
+                    <form>
+                        <input class="messageSender__input" placeholder="Any update?" type="text" />
+                    </form>
+                </div>
+
+                <div class="messageSender__bottom">
+                    <div class="messageSender__option">
+                        <span style="color: red" class="material-icons">Photo </span>
+
+                    </div>
+
+                    <div class="messageSender__option">
+                        <span style="color: green" class="material-icons">
+                            Video
+                        </span>
+                    </div>
+
+                    <div class="messageSender__option">
+                        <span style="color: orange" class="material-icons">
+                            Code
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- post  1 starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img src="./assets/Mask group.png" alt="" srcset="">
+                    <div class="post__topInfo">
+                        <h3>Debanjan Basu</h3>
+                        <p>11 November at 20:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p>Learning HTML CSS JAVASCRIPT - VIDEO FILE</p>
+                </div>
+
+                <div class="post__image">
+                    <video width="980" controls>
+                        <source src="./assets/video_html.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons">Like </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Comment </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Share </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- post  2 starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img src="./assets/Mask group.png" alt="" srcset="">
+                    <div class="post__topInfo">
+                        <h3>Debanjan Basu</h3>
+                        <p>11 November at 20:50</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p>AUDIO SONG POST</p>
+                </div>
+
+                <div class="post__image">
+                    <audio width="980" controls>
+                        <source src="./assets/song.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons">Like </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Comment </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Share </span>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+
+            <!-- post  3 starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img src="./assets/Mask group.png" alt="" srcset="">
+                    <div class="post__topInfo">
+                        <h3>Debanjan Basu</h3>
+                        <p>11 November at 21:15</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p>Pool Form</p>
+                </div>
+
+                <div class="post__image">
+                    <form action="">
+
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <br>
+                        <input type="number" name="number" id="number" placeholder="Enter your phone number">
+                        <input type="datetime-local" name="datetime" id="datetime" />
+                        <br>
+                        <label for="">Enter Geolocation</label><br>
+                        <input type="button" value="Click Here" onclick="getLocation()">
+                        <br>
+                        <textarea name="enquire" id="" cols="90" rows="2" placeholder="Enter any enquiry"></textarea>
+
+                        <br><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+
+                    </form>
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons">Like </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Comment </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Share </span>
+                    </div>
+                </div>
+                <!-- post ends -->
+            </div>
+
+
+             <!-- post  4 starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img src="./assets/Mask group.png" alt="" srcset="">
+                    <div class="post__topInfo">
+                        <h3>Debanjan Basu</h3>
+                        <p>11 November at 21:45</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p>CANVAS POST</p>
+                </div>
+
+                <div class="post__image">
+                    <canvas id="myCanvas">
+                    Your browser does not support the HTML canvas tag.</canvas>
+
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons">Like </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Comment </span>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> Share </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- main body ends -->
+
+        <div id="fb-root"></div>
+        <script>
+
+            var x = document.getElementById("demo");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "25px Poppins";
+            ctx.fillText("This is a Canvas Text",10,50);
+
+        </script>
+
+        </script>
+</body>
+
+</html>
